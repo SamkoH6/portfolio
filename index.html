@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="spotlight"></div>
+    <div class="container">
+      <div class="left">
+        <div class="language-switcher">
+          <a href="index.html">EN /</a>
+          <a href="index-sk.html">SK</a>
+        </div>
+        <div class="header">
+          <h1 class="heading">Samuel Hronec</h1>
+          <h2 class="subheading">Full-Stack Student Developer</h2>
+          <p class="header-text">
+            Full-stack dev, seeking internship, passion for web development
+          </p>
+        </div>
+
+        <nav class="navigation">
+          <ul>
+            <li>
+              <a href="#about" onclick="scrollToSection('about')">About</a>
+            </li>
+            <li>
+              <a href="#projects" onclick="scrollToSection('projects')"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" onclick="scrollToSection('contact')"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="social-media">
+          <a href="https://github.com/SamkoH6"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/samuel-hronec-8bb318245/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/samko_hronec/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="about" id="about">
+          <p>
+            Hi! My name is Sam, and I'm an aspiring programmer with a passion
+            for web development and data science. I've been coding since primary
+            school and have been looking to better myself in the field since.
+          </p>
+          <p>
+            I used to work as a Freelancer on
+            <a href="Upwork.com" class="highlight-text">Upwork</a>, while in
+            school, where I got to work on lots of projects in and outside of
+            the tech industry. I got to learn how to build my personal brand and
+            managed to create a solid profile and income. However, I decided to
+            quit freelancing and focus on my personal projects, to pursue a
+            programming carrer.
+          </p>
+          <p>
+            My main focus these days is, actively learning new stacks, and
+            creating complex
+            <a class="highlight-text" onclick="scrollToSection('projects')"
+              >coding projects</a
+            >
+            to refine skills. My portfolio showcases a diverse range of
+            projects, including React, Angular and .NET web applications, which
+            you can check out yourself bellow. They range from simple projects
+            to get myself familar with the stack, to complex web application
+            with real life usage.
+          </p>
+          <p>
+            I am open to learning new technologies, and I am always looking for
+            new opportunities to grow and learn. I am currently looking for an
+            internship/job to further better skills and knowledge in the field.
+            I work great in teams, and I am always looking to help out and
+            learn. At the same time I am able to work on my own and deliver
+            results.
+          </p>
+          <p>
+            When I am not at the computer, I'm working out, playing the guitar,
+            reading, driving around, relaxing with my dog or hanging out.
+          </p>
+        </div>
+        <div class="projects" id="projects">
+          <div class="card">
+            <h3>
+              Crypto Currency Analytics Web Application with Price Prediciton
+            </h3>
+            <p class="project_description">
+              Created a cryptocurrency analytics and price prediction project
+              using Python. Scraped data from a cryptocurrency API. Utilized
+              Pandas, NumPy, Sklearn, and TensorFlow for data analysis and
+              machine learning. Developed machine learning models, including
+              linear regression and LSTM neural networks, for price prediction.
+              Implemented data preprocessing techniques and feature engineering.
+              Designed a user-friendly frontend interface with React with MUI
+              and Emotion styling for interactive data exploration.
+            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>CoinGecko API</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>MUI</span>
+              <span>Emotion</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Admin Ecom Managment Web Application</h3>
+            <p class="project_description">
+              Created an Admin E-commerce Management Web Application using
+              Angular for the user interface and a Node.js for building the
+              server and an in-memory database for backend. The application
+              enables efficient management of product inventory.
+            </p>
+            <div class="tags">
+              <span>Angular</span>
+              <span>Node.js</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Fitness Cardio App with Security and use Authentification</h3>
+            <p class="project_description">
+              Developed a Fitness Cardio App with Java and Spring Boot for the
+              backend and a secure authentication system. The app allows users
+              to track cardio workouts, set goals, and monitor progress.
+              Integrated security features and user authentication for safe
+              access to personal data. Designed the app for efficiency and
+              scalability, offering a user-friendly experience with tracking and
+              reporting functionalities.
+            </p>
+            <div class="tags">
+              <span>Java</span>
+              <span>Springboot</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>ASP.NET MVC Crud Application</h3>
+            <p class="project_description">
+              Created an ASP.NET CRUD MVC app with Tailwind CSS styling for a
+              modern and responsive user interface for efficient management of
+              data. Implemented Create, Read, Update, and Delete operations for
+              managing records in a database. Designed the app with a focus on
+              clean architecture and usability, providing a user-friendly
+              interface. Integrated data validation and error handling to ensure
+              robust performance and reliable data management.
+            </p>
+            <div class="tags">
+              <span>C#</span>
+              <span>ASP.NET</span>
+              <span>HTML</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Fitness SPA</h3>
+            <p class="project_description">
+              Developed a Fitness Gym Website using React for a modern and
+              interactive user experience. The website allows users to explore
+              gym services, view class schedules, and book sessions. Designed a
+              responsive and user-friendly interface for easy navigation and
+              engagement. Provided features such as membership information to
+              enhance the customer experience.
+            </p>
+            <div class="tags">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact" id="contact">
+          <h3>Contact Me</h3>
+          <p>
+            <span class="highlight-text">Email</span>: sam.hronec6@gmail.com
+          </p>
+          <p><span class="highlight-text">Phone</span>: +421 904 503 475</p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="main.js"></script>
+</html>

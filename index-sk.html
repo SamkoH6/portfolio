@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="spotlight"></div>
+    <div class="container">
+      <div class="left">
+        <div class="language-switcher">
+          <a href="index.html">EN /</a>
+          <a href="index-sk.html">SK</a>
+        </div>
+        <div class="header">
+          <h1 class="heading">Samuel Hronec</h1>
+          <h2 class="subheading">Full-Stack Študent Developer</h2>
+          <p class="header-text">
+            Full-stack dev, hľadám stáž-brigádu, cit pre web development
+          </p>
+        </div>
+
+        <nav class="navigation">
+          <ul>
+            <li>
+              <a href="#about" onclick="scrollToSection('about')">O Mne</a>
+            </li>
+            <li>
+              <a href="#projects" onclick="scrollToSection('projects')"
+                >Projekty</a
+              >
+            </li>
+            <li>
+              <a href="#contact" onclick="scrollToSection('contact')"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="social-media">
+          <a href="https://github.com/SamkoH6"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/samuel-hronec-8bb318245/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/samko_hronec/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="about" id="about">
+          <p>
+            Zdravim! Volám sa Samo a som programátor s vášňou pre vývoj webových
+            aplikácií a prácu s dátami. Kódim od základnej školy a odvtedy sa
+            snažím zdokonaliť v tejto branži.
+          </p>
+          <p>
+            Pracoval som ako Freelancer na platforme
+            <a href="Upwork.com" class="highlight-text">Upwork</a>, počas školy,
+            kde som získal pracovné skúsenosti na mnohých projektoch v Tech
+            priemysle, ale aj mimo neho. Naučil som ako si vybudovať svoju
+            personal brand a vytvoril som si solídny profil a biznis. Rozhodol
+            som sa však ukončiť prácu na voľnej nohe a zamerať sa na svoje
+            osobné projekty, aby som sa mohol venovať programovaniu naplno.
+          </p>
+          <p>
+            V týchto dňoch je mojím hlavným zameraním aktívne učenie sa nových
+            stackov a vytváranie komplexných
+            <a class="highlight-text" onclick="scrollToSection('projects')"
+              >projektov</a
+            >
+            na zdokonalenie svojich zručností. Moje portfólio obsahuje škálu
+            projektov vrátane webových aplikácií vytvorených pomocou Java,
+            React, Angular a .NET, ktoré nájdete nižšie. Pohybujú sa od
+            jednoduchých projektov pre oboznámenie sa so stackmi, po komplexné
+            webové aplikácie s využitím v reálnom živote.
+          </p>
+          <p>
+            Som otvorený učeniu nových technológií a vždy hľadám nové
+            príležitosti rásť a zlepšovať sa. Momentálne hľadám stáž/brigádu kde
+            by som získal daľšie praktické zručnosti, a posunul sa ďaľej ako
+            programátor. Pracujem dobre v tímoch a vždy sa snažím byť nápomocný
+            a aktívny. Zároveň dokážem pracovať samostatne a dodávať výsledky.
+          </p>
+          <p>
+            Keď nie som pri počítači, cvičím, hrám na gitare, čítam, šoférujem,
+            relaxujem so psom alebo som vonku.
+          </p>
+        </div>
+        <div class="projects" id="projects">
+          <div class="card">
+            <h3>
+              Webová Aplikácia pre Analýzu Kryptomien a Stocks s Predikciou Ceny
+            </h3>
+            <p class="project_description">
+              Nezávisle som vytvoril projekt analýzy dát a vývoja dashboardu so
+              zameraním na údaje o kryptomenách. Využil som Python na
+              spracovanie údajov, machine learning a vizualizáciu. Dáta som
+              získal pomocou CoinGecko API. Vykonal som spracovanie a analýzu
+              údajov pomocou Pandas, NumPy, Sklearn a TensorFlow. Vytvoril som
+              modely na predpovedanie cien, linear regression a LSTM.
+              Implementované techniky predbežného spracovania údajov, ako je
+              scalling a feature engineering. Vytvoril som user-friendly
+              frontend pomocou Reactu, pomocou MUI a Emotion stylingu pre
+              moderný design a na interaktívne skúmanie údajov.
+            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>CoinGecko API</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>MUI</span>
+              <span>Emotion</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Webová Aplikácia pre Manažment Inventára Online Obchodu</h3>
+            <p class="project_description">
+              Vytvoril som webovú aplikácii Admin Ecom aplikáciu s Angular pre
+              používateľské rozhranie a Node.js pre zostavenie servera a
+              in-memory databázy pre backend. Aplikácia umožňuje efektívnu
+              správu produktov. Navrhol som aplikáciu s dôrazom na použiteľnosť,
+              poskytujúcu používateľsky prívetivé rozhranie. Integroval som
+              validáciu údajov a spracovanie chýb, aby som zabezpečil spoľahlivú
+              správu údajov.
+            </p>
+            <div class="tags">
+              <span>Angular</span>
+              <span>Node.js</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>
+              Fitness Kardio Aplikácia s Zabezpečením and User Authentification
+            </h3>
+            <p class="project_description">
+              Vytvoril som Fitness Kardio Aplikáciu s Java a Spring Boot pre
+              backend a bezpečným autentifikačným systémom. Aplikácia umožňuje
+              používateľom sledovať kardio tréningy, stanoviť si ciele a
+              monitorovať pokrok. Integroval som bezpečnostné funkcie a
+              autentifikáciu používateľov pre bezpečný prístup k osobným údajom.
+              Navrhol som aplikáciu pre efektívnosť a škálovateľnosť, ponúkajúcu
+              používateľsky prívetivý zážitok s funkciami sledovania a
+              reportingu.
+            </p>
+            <div class="tags">
+              <span>Java</span>
+              <span>Springboot</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>ASP.NET MVC Crud Aplikácia</h3>
+            <p class="project_description">
+              Vytvoril som ASP.NET CRUD MVC aplikáciu s Tailwind CSS stylingom
+              pre moderné a responzívne používateľské rozhranie pre efektívnu
+              správu údajov. Implementoval som operácie Create, Read, Update a
+              Delete pre správu záznamov v databáze. Imlpevmentoval som Error
+              Handling pre spracovanie chýb a zabezpečil som spoľahlivú správu
+              údajov.
+            </p>
+            <div class="tags">
+              <span>C#</span>
+              <span>ASP.NET</span>
+              <span>HTML</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Fitness SPA</h3>
+            <p class="project_description">
+              Vytvoril dynamickú a responzívnu SPA s dôrazom na interakciu
+              užívateľa a bezproblémové rozhranie. Pri efektívnej konštrukcii
+              SPAs dynamickými komponentami a načítavaním dát som využil
+              JavaScript a React. Na vlastnú štylizáciu a responzívny layout som
+              uplatnil natívne CSS, bez nutnosti použitia externých knižníc
+              alebo frameworkov.
+            </p>
+            <div class="tags">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact" id="contact">
+          <h3>Kontaktujte ma</h3>
+          <p>
+            <span class="highlight-text">Email</span>: sam.hronec6@gmail.com
+          </p>
+          <p><span class="highlight-text">Telefón</span>: +421 904 503 475</p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="main.js"></script>
+</html>
