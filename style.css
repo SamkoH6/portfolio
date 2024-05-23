@@ -15,12 +15,17 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html,
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
 }
 
 ::selection {
@@ -37,7 +42,7 @@ body {
 
 .left {
   position: fixed;
-  width: 50%;
+  width: 44%;
   height: 100vh;
   box-sizing: border-box;
   padding: 60px;
@@ -49,7 +54,7 @@ body {
 .right {
   position: absolute;
   right: 0;
-  width: 50%;
+  width: 56%;
   height: 100vh;
   padding: 60px;
   box-sizing: border-box;
@@ -141,7 +146,11 @@ li a {
   left: 0;
   width: 900px; /* Spotlight size */
   height: 900px;
-  background: radial-gradient(circle, rgba(189, 0, 0, 0.14), transparent 80%);
+  background: radial-gradient(
+    circle at center,
+    rgba(189, 0, 0, 0.09) 0%,
+    rgba(189, 0, 0, 0) 70%
+  );
   pointer-events: none; /* Disable mouse events on the spotlight */
   border-radius: 50%; /* Make it circular */
   transform: translate(-50%, -50%); /* Center the spotlight */
@@ -155,15 +164,18 @@ li a {
 
 .about {
   margin-bottom: 50px;
+  padding: 0 24px;
 }
 
 .card {
+  box-sizing: border-box;
   width: 100%;
   height: auto;
   display: block;
-  padding: 24px 0;
+  padding: 24px;
   cursor: pointer;
   transition: 0.2s ease;
+  margin: 20px 0;
 }
 
 .card:hover {
@@ -210,4 +222,44 @@ li a {
 
 .language-switcher a:hover {
   color: var(--secondary-color);
+}
+
+/* Responsive styles for screens smaller than 1200px */
+@media (max-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .left,
+  .right {
+    position: relative;
+    width: 100vw; /* Full width */
+    box-sizing: border-box;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .contact {
+    text-align: center;
+  }
 }
