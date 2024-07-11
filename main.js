@@ -10,11 +10,17 @@ function updateSpotlight(e) {
 // Add mousemove event listener to the document
 document.addEventListener("mousemove", updateSpotlight);
 
+let isScrollingToSection = false; // Flag to indicate when scrolling to a section
+
 function scrollToSection(sectionId) {
+  isScrollingToSection = true;
   document.getElementById(sectionId).scrollIntoView({
     behavior: "smooth",
     block: "start",
   });
+  setTimeout(() => {
+    isScrollingToSection = false;
+  }, 1000);
 }
 
 document.getElementById("toggleRetro").addEventListener("click", function () {
@@ -32,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const speed = 0.5; // Adjust scrolling speed as needed
 
   function slideTags() {
+    if (isScrollingToSection) return; // Exit if scrolling to a section
     if (scrollAmount >= tagsSlide.scrollWidth / 2) {
       scrollAmount = 0; // Reset scroll position for an infinite loop
     } else {

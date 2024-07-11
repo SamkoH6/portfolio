@@ -272,6 +272,10 @@ li a {
   margin-bottom: 40px;
 }
 
+.slide-container {
+  position: relative;
+}
+
 .tags-slide {
   width: 100%;
   display: flex;
