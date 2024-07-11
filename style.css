@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 :root {
-  --primary-color: #1a1a1a;
+  --primary-color: rgb(26, 26, 26);
   --secondary-color: #8b0000;
+  --secondary-color-o: rgba(139, 0, 0, 0.7);
   --secondary-color-rgb: rgb(139, 0, 0);
   --text-color: #d0d0d0;
   --subtext-color: #b0b0b0;
+  --crt-background-color: #000;
+  --crt-scanline-intensity: rgba(18, 16, 16, 0.3);
 }
 
 * {
@@ -22,6 +25,45 @@ html,
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--primary-color);
+  color: var(--crt-text-color);
+  background-image: linear-gradient(
+      rgba(26, 26, 26, 0.7),
+      rgba(26, 26, 26, 0.9)
+    ),
+    url(wave.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+body.retro-effect::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 1px,
+    var(--crt-scanline-intensity) 1px,
+    var(--crt-scanline-intensity) 3px
+  );
+  pointer-events: none; /* Allows clicks to pass through */
+  z-index: 9999;
+}
+
+body.retro-effect::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, transparent 50%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none;
+  z-index: 9998;
 }
 
 a {
@@ -189,7 +231,7 @@ li a {
 
 .tags span {
   display: inline-block;
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color-o);
   color: var(--text-color);
   padding: 6px 14px;
   border-radius: 20px;
@@ -225,6 +267,33 @@ li a {
   color: var(--secondary-color);
 }
 
+.wiu {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.tags-slide {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tags-slide span {
+  display: inline-block;
+  margin-right: 10px; /* Space between tags */
+}
+
+.retro {
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  right: 100px;
+  top: 0;
+  padding: 1px;
+  z-index: 100;
+  cursor: pointer;
+}
+
 /* Responsive styles for screens smaller than 1200px */
 @media (max-width: 1200px) {
   .container {
@@ -253,7 +322,6 @@ li a {
 
   .right {
     display: flex;
-    align-items: center;
   }
 
   .header {
