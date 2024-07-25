@@ -23,9 +23,9 @@ function scrollToSection(sectionId) {
   }, 1000);
 }
 
-document.getElementById("toggleRetro").addEventListener("click", function () {
-  document.body.classList.toggle("retro-effect");
-});
+// document.getElementById("toggleRetro").addEventListener("click", function () {
+//   document.body.classList.toggle("retro-effect");
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
   const tagsSlide = document.querySelector(".tags-slide");
@@ -48,4 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   setInterval(slideTags, 20); // Adjust interval as needed for smoothness vs performance
+});
+
+// Toggle rain
+document.body.classList.toggle("rain");
+document.getElementById("toggleRain").addEventListener("click", function () {
+  document.body.classList.toggle("rain");
 });

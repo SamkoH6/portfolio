@@ -27,13 +27,34 @@ body {
   background-color: var(--primary-color);
   color: var(--crt-text-color);
   background-image: linear-gradient(
-      rgba(26, 26, 26, 0.7),
+      rgba(26, 26, 26, 0.4),
       rgba(26, 26, 26, 0.9)
     ),
-    url(wave.jpeg);
+    url("bg_1.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+}
+
+body.rain::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 120%;
+  background: url("rain.png");
+  animation: rain 0.3s linear infinite;
+  opacity: 0.25;
+}
+
+@keyframes rain {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 20% 100%;
+  }
 }
 
 body.retro-effect::before {
@@ -47,8 +68,8 @@ body.retro-effect::before {
     to bottom,
     transparent,
     transparent 1px,
-    var(--crt-scanline-intensity) 1px,
-    var(--crt-scanline-intensity) 3px
+    var(--crt-scanline-intensity) 2px,
+    var(--crt-scanline-intensity) 4px
   );
   pointer-events: none; /* Allows clicks to pass through */
   z-index: 9999;
@@ -288,10 +309,20 @@ li a {
   margin-right: 10px; /* Space between tags */
 }
 
-.retro {
+.retro-btn {
   background-color: rgba(0, 0, 0, 1);
   position: absolute;
   right: 100px;
+  top: 0;
+  padding: 1px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.rain-btn {
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  right: 150px;
   top: 0;
   padding: 1px;
   z-index: 100;
