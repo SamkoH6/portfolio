@@ -231,6 +231,10 @@ li a {
   padding: 0 24px;
 }
 
+.projects p {
+  padding: 0 24px;
+}
+
 .card {
   box-sizing: border-box;
   width: 100%;
@@ -322,9 +326,9 @@ li a {
 .rain-btn {
   background-color: rgba(0, 0, 0, 1);
   position: absolute;
-  right: 150px;
+  right: 100px;
   top: 0;
-  padding: 1px;
+  padding: 1px 4px;
   z-index: 100;
   cursor: pointer;
 }
